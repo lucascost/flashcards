@@ -2,6 +2,8 @@ package com.lucascost.flashcards.entity;
 
 import jakarta.persistence.*;
 
+import java.util.List;
+
 @Entity
 public class Deck {
     @Id
@@ -11,6 +13,10 @@ public class Deck {
 
     @Column(name = "title", nullable = false, length = 100)
     private String title;
+
+    @OneToMany(mappedBy = "deck", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<Card> cards;
+
 
     public Deck() {
     }

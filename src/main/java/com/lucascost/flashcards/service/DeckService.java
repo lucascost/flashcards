@@ -30,7 +30,7 @@ public class DeckService {
             }
         }
         catch (Exception ex){
-            System.out.println("Debug + "+ex.getMessage());
+            System.out.println("Debug "+ex.getMessage());
         }
         return null;
     }
@@ -43,7 +43,7 @@ public class DeckService {
             }
         }
         catch (Exception ex){
-            System.out.println("Debug + "+ex.getMessage());
+            System.out.println("Debug "+ex.getMessage());
         }
         return null;
     }
